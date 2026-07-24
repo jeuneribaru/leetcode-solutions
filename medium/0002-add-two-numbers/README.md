@@ -40,8 +40,8 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.5 MB  
-**Submitted:** 2026-07-24T14:48:01.014Z  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-07-24T14:48:18.197Z  
 
 ```py
         result = int(s1[::-1]) + int(s2[::-1])
@@ -50,7 +50,7 @@ Constraints:
         factice = ListNode(0)
         noeud_actif = factice
         for cara in s_result : 
-            noeud = ListNode(cara)
+            noeud = ListNode(int(cara))
             noeud_actif.next = noeud
             noeud_actif = noeud 
         return factice.next
