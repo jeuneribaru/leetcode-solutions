@@ -40,8 +40,8 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.4 MB  
-**Submitted:** 2026-07-24T14:50:17.207Z  
+**Memory:** 19.1 MB  
+**Submitted:** 2026-07-24T14:50:46.178Z  
 
 ```py
         result = int(s1) + int(s2)
@@ -63,7 +63,7 @@ Constraints:
 class Solution:
 #         self.next = next
 #         self.val = val
-        print(result)
+        print(s1, s2, result)
 
 ```
 
