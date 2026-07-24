@@ -7,15 +7,13 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         s1 = ''
         s2 = ""
-        while l1.next != None :
+        while l1 != None :
             s1 += str(l1.val)
             l1 = l1.next
-        s1 += str(l1.val)
-        while l2.next != None :
+        while l2 != None :
             s2 += str(l2.val)
             l2 = l2.next
-        s2 += str(l2.val)
-        result = int(s1) + int(s2)
+        result = int(s1[::-1]) + int(s2[::-1])
         print(s1, s2,result)
         s_result = str(result)[::-1]
         factice = ListNode(0)
