@@ -41,7 +41,7 @@ Constraints:
 **Language:** Python  
 **Runtime:** 0 ms  
 **Memory:** 19.3 MB  
-**Submitted:** 2026-07-24T14:54:10.739Z  
+**Submitted:** 2026-07-24T14:54:38.699Z  
 
 ```py
         result = int(s1) + int(s2)
