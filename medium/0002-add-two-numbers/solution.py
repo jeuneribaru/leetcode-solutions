@@ -1,4 +1,4 @@
-        result = int(s1[::-1]) + int(s2[::-1])
+        result = int(s1) + int(s2)
             l2 = l2.next
         s_result = str(result)[::-1]
         factice = ListNode(0)
