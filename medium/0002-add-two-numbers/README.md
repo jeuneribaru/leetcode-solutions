@@ -40,18 +40,14 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.1 MB  
-**Submitted:** 2026-07-24T14:50:46.178Z  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-07-24T14:52:08.486Z  
 
 ```py
         result = int(s1) + int(s2)
             l2 = l2.next
         s_result = str(result)[::-1]
         factice = ListNode(0)
-        noeud_actif = factice
-        for cara in s_result : 
-            noeud = ListNode(int(cara))
-            noeud_actif.next = noeud
         while l2.next != None :
             s2 += str(l2.val)
             l1 = l1.next
@@ -63,7 +59,11 @@ Constraints:
 class Solution:
 #         self.next = next
 #         self.val = val
-        print(s1, s2, result)
+        print(s1, s2,result)
+        s1 += str(l1.val)
+        l1 = l1.next
+        s2 += str(l2.val)
+        l2 = l2.next
 
 ```
 
