@@ -6,10 +6,6 @@
         for cara in s_result : 
             noeud = ListNode(int(cara))
             noeud_actif.next = noeud
-            noeud_actif = noeud 
-        return factice.next
-
-
         while l2.next != None :
             s2 += str(l2.val)
             l1 = l1.next
@@ -18,3 +14,7 @@
         s2 = ""
         s1 = ''
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+class Solution:
+#         self.next = next
+#         self.val = val
+        print(result)
