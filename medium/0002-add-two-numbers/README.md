@@ -40,11 +40,11 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-07-24T14:49:55.337Z  
+**Memory:** 19.4 MB  
+**Submitted:** 2026-07-24T14:50:17.207Z  
 
 ```py
-        result = int(s1[::-1]) + int(s2[::-1])
+        result = int(s1) + int(s2)
             l2 = l2.next
         s_result = str(result)[::-1]
         factice = ListNode(0)
