@@ -4,7 +4,7 @@
         factice = ListNode(0)
         noeud_actif = factice
         for cara in s_result : 
-            noeud = ListNode(cara)
+            noeud = ListNode(int(cara))
             noeud_actif.next = noeud
             noeud_actif = noeud 
         return factice.next
