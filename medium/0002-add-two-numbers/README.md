@@ -39,9 +39,9 @@ Constraints:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-07-24T14:59:02.034Z  
+**Runtime:** 7 ms (beats 24.29%)  
+**Memory:** 19.3 MB (beats 40.30%)  
+**Submitted:** 2026-07-24T14:59:09.202Z  
 
 ```py
 # Definition for singly-linked list.
@@ -53,15 +53,13 @@ class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         s1 = ''
         s2 = ""
-        while l1.next != None :
+        while l1 != None :
             s1 += str(l1.val)
             l1 = l1.next
-        s1 += str(l1.val)
-        while l2.next != None :
+        while l2 != None :
             s2 += str(l2.val)
             l2 = l2.next
-        s2 += str(l2.val)
-        result = int(s1) + int(s2)
+        result = int(s1[::-1]) + int(s2[::-1])
         print(s1, s2,result)
         s_result = str(result)[::-1]
         factice = ListNode(0)
