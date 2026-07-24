@@ -17,4 +17,4 @@
 class Solution:
 #         self.next = next
 #         self.val = val
-        print(result)
+        print(s1, s2, result)
