@@ -1,31 +1,31 @@
-        } 
+#include <stdio.h>
+#include <string.h>
+#include <stdbool.h>
 
-        else {
+bool isValid(char* s) {
+    int len = strlen(s);
+    char stack[len]; 
+    int top = -1; 
 
-            if (top == -1) return false;
-            
-            if (c == ')' && stack[top] != '(') return false;
-            if (c == '}' && stack[top] != '{') return false;
-            if (c == ']' && stack[top] != '[') return false;
-            
+    for (int i = 0; i < len; i++) {
+        char c = s[i];
 
-            top--;
-        }
-    }
+        if (c == '(' || c == '{' || c == '[') {
+            stack[++top] = c;
+        } 
 
-    return top == -1;
+        else {
 
-bool isValid(char* s) {
-    int len = strlen(s);
-    char stack[len]; 
-    int top = -1; 
+            if (top == -1) return false;
+            
+            if (c == ')' && stack[top] != '(') return false;
+            if (c == '}' && stack[top] != '{') return false;
+            if (c == ']' && stack[top] != '[') return false;
+            
 
-    for (int i = 0; i < len; i++) {
-        char c = s[i];
+            top--;
+        }
+    }
 
-        if (c == '(' || c == '{' || c == '[') {
-            stack[++top] = c;
-#include <string.h>
-#include <stdbool.h>
+    return top == -1;
 }
-#include <stdio.h>
