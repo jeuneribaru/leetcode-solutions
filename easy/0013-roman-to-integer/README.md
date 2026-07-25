@@ -62,7 +62,7 @@ Constraints:
 **Language:** Python  
 **Runtime:** 0 ms  
 **Memory:** 19.3 MB  
-**Submitted:** 2026-07-25T11:22:22.598Z  
+**Submitted:** 2026-07-25T11:23:36.592Z  
 
 ```py
 class Solution:
@@ -80,12 +80,12 @@ class Solution:
         ret = 0
             ret += dic[s[i]] 
         for j in range(1,len(s)) :
-            if s[i-1] == "I" and ([i] == "V" or s[i] == "X"):
+            if s[j-1] == "I" and (s[j] == "V" or s[j] == "X"):
                     ret -= 2
 
-            elif s[i-1] == "X" and ([i] == "L" or s[i] == "C"):
+            elif s[j-1] == "X" and (s[j] == "L" or s[j] == "C"):
                     ret -= 10
-            elif s[i-1] == "C" and ([i] == "D" or s[i] == "M"):
+            elif s[j-1] == "C" and (s[j] == "D" or s[j] == "M"):
                     ret -= 100
         return ret 
 
