@@ -17,8 +17,8 @@ class Solution:
                     ret -= 2
 
             elif s[j-1] == "X" and (s[j] == "L" or s[j] == "C"):
-                    ret -= 10
+                    ret -= 20
             elif s[j-1] == "C" and (s[j] == "D" or s[j] == "M"):
-                    ret -= 100
+                    ret -= 200
         return ret 
 
