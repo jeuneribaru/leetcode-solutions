@@ -68,9 +68,9 @@ Constraints:
 ## Solution
 
 **Language:** Python  
-**Runtime:** 0 ms  
-**Memory:** 19.3 MB  
-**Submitted:** 2026-07-25T10:56:20.061Z  
+**Runtime:** 7 ms (beats 1.17%)  
+**Memory:** 19.2 MB (beats 54.97%)  
+**Submitted:** 2026-07-25T10:56:25.565Z  
 
 ```py
 class Solution:
@@ -84,8 +84,9 @@ class Solution:
                 pro = int(str_n[i])
                 for j in range(i+1, len(str_n)) :
                     pro *= int(str_n[j])
-                if pro > maxx :
-                    maxx = pro 
+                    if pro > maxx :
+                        maxx = pro 
+                    pro = int(str_n[i])
             return maxx
                     
 ```
