@@ -9,7 +9,8 @@ class Solution:
                 pro = int(str_n[i])
                 for j in range(i+1, len(str_n)) :
                     pro *= int(str_n[j])
-                if pro > maxx :
-                    maxx = pro 
+                    if pro > maxx :
+                        maxx = pro 
+                    pro = int(str_n[i])
             return maxx
                     
