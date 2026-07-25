@@ -42,8 +42,8 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.5 MB  
-**Submitted:** 2026-07-25T10:28:05.155Z  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-07-25T10:04:07.496Z  
 
 ```py
 class Solution:
@@ -52,11 +52,11 @@ class Solution:
         while i > 0 and s[i] != " " :
             i -= 1
         ret = 0
-        for j in range(i+1, len(s)) :
+        for j in range(i, len(s)) :
                 ret += 1
 
         return ret 
-        s = s.strip()
+        s.strip()
 
 
 ```
