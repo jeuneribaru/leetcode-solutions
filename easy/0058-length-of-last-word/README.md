@@ -42,20 +42,21 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.2 MB  
-**Submitted:** 2026-07-25T10:29:01.870Z  
+**Memory:** 19.5 MB  
+**Submitted:** 2026-07-25T10:28:05.155Z  
 
 ```py
-class Solution:
-    def lengthOfLastWord(self, s: str) -> int:
-        s = s.strip()
-        i = len(s)-1
-        while i > 0 and s[i] != " " :
-            i -= 1
-        ret = 0
-        for j in range(i+1, len(s)) :
-                ret += 1
-        return ret 
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        i = len(s)-1
+        while i > 0 and s[i] != " " :
+            i -= 1
+        ret = 0
+        for j in range(i+1, len(s)) :
+                ret += 1
+
+        return ret 
+        s = s.strip()
 
 
 ```
