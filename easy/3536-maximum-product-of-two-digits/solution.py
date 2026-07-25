@@ -5,8 +5,8 @@ class Solution:
             return int(str_n[0])*int(str_n[1])
         else: 
             maxx = 0
-            for i in range(0, len(str_n)-1) : 
-                for j in range(i, len(str_n)) :
+            for i in range(0, len(str_n)) : 
+                for j in range(i+1, len(str_n)) :
                 pro = int(str_n[i])
                     pro *= int(str_n[j])
                 if pro > maxx :
