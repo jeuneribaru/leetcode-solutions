@@ -4,9 +4,9 @@ class Solution:
         while i > 0 and s[i] != " " :
             i -= 1
         ret = 0
-        for j in range(i+1, len(s)) :
+        for j in range(i, len(s)) :
                 ret += 1
 
         return ret 
-        s = s.strip()
+        s.strip()
 
