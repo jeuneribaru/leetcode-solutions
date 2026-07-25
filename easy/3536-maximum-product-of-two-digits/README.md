@@ -69,26 +69,25 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.1 MB  
-**Submitted:** 2026-07-25T10:52:25.026Z  
+**Memory:** 19.2 MB  
+**Submitted:** 2026-07-25T10:54:15.801Z  
 
 ```py
-class Solution:
-    def maxProduct(self, n: int) -> int:
-        str_n = str(n)
-        if len(str_n) == 2 :
-            return int(str_n[0])*int(str_n[1])
-        else: 
-            maxx = 0
-            for i in range(0, len(str_n)) : 
-                for j in range(i+1, len(str_n)) :
-                pro = int(str_n[i])
-                    pro *= int(str_n[j])
-                if pro > maxx :
-                    maxx = pro 
-            return maxx
-                    
-
+class Solution:
+    def maxProduct(self, n: int) -> int:
+        str_n = str(n)
+        if len(str_n) == 2 :
+            return int(str_n[0])*int(str_n[1])
+        else: 
+            maxx = 0
+            for i in range(0, len(str_n)) : 
+                pro = int(str_n[i])
+                for j in range(i+1, len(str_n)) :
+                    pro *= int(str_n[j])
+                if pro > maxx :
+                    maxx = pro 
+            return maxx
+                    
 ```
 
 ---
