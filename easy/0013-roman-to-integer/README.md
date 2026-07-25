@@ -61,8 +61,8 @@ Constraints:
 
 **Language:** Python  
 **Runtime:** 0 ms  
-**Memory:** 19.3 MB  
-**Submitted:** 2026-07-25T11:23:36.592Z  
+**Memory:** 19.2 MB  
+**Submitted:** 2026-07-25T11:24:47.386Z  
 
 ```py
 class Solution:
@@ -84,9 +84,9 @@ class Solution:
                     ret -= 2
 
             elif s[j-1] == "X" and (s[j] == "L" or s[j] == "C"):
-                    ret -= 10
+                    ret -= 20
             elif s[j-1] == "C" and (s[j] == "D" or s[j] == "M"):
-                    ret -= 100
+                    ret -= 200
         return ret 
 
 
